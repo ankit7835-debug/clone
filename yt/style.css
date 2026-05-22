@@ -1,0 +1,156 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 20px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.nav-center input {
+  flex: 1;
+  height: 36px;
+  background: #121212;
+  border: 1px solid #303030;
+  color: white;
+  padding: 0 12px;
+  border-radius: 20px 0 0 20px;
+}
+
+.nav-center button {
+  height: 36px;
+  width: 60px;
+  background: #222;
+  border: 1px solid #303030;
+  border-left: none;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.mic {
+  height: 24px;
+  margin-left: 12px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.create {
+  background: #272727;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 56px);
+  background: #0f0f0f;
+  padding: 12px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: #272727;
+}
+
+/* ================= MAIN ================= */
+.main {
+  margin-top: 56px;
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* ================= CHIPS ================= */
+.container1 {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.container1 button {
+  background: #272727;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.container1 button:hover {
+  background: #3a3a3a;
+}
+
+/* ================= VIDEOS ================= */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  border: none;
+}
+
+.video-card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
