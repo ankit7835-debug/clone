@@ -1,0 +1,456 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    background-color: RGB(255, 215, 65);
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    margin: 15px auto;
+    height: 100px;
+    width: 90%;
+    background-color: RGB(246, 246, 246);
+    border-radius: 10px;
+
+
+}
+
+
+.right1 ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+.right1 ul li {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+
+
+.capsule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.capsule button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+.capsule button:first-child {
+    background-color: RGB(255, 215, 65);
+
+}
+
+
+.capsule .english {
+    background-color: rgb(246, 246, 246);
+    gap: 6px;
+    border: none;
+}
+
+
+.capsule .english img {
+    width: 18px;
+    height: 18px;
+}
+
+.capsule .english:hover {
+    background-color: grey;
+    color: lightgrey;
+}
+
+.main-heading {
+    margin: 60px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 68px;
+    word-spacing: 5px;
+    gap: 5px;
+}
+
+.h3 {
+    position: relative;
+    padding-bottom: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    color: #6f6f6f;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: normal;
+
+
+}
+
+
+.border-h4 {
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: RGB(255, 215, 65);
+
+
+}
+
+.mac-linux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 40px;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.logo4 img {
+    width: 50px;
+}
+
+
+.text {
+    font-size: 30px;
+    color: #555;
+}
+
+.text span {
+    font-size: 16px;
+    color: #777;
+}
+
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+
+.card {
+    background: #e9e6e2;
+    border-radius: 12px;
+    text-align: center;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.card button {
+    background: #f4c542;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card button:hover {
+    background: #e0b733;
+}
+
+
+.card small {
+    font-size: 12px;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .container2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 120px;
+}
+
+
+.left {
+    max-width: 500px;
+}
+
+.left h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.right {
+    background: #2f2f2f;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 380px;
+    text-align: center;
+}
+
+
+.right h2 {
+    color: #1ec6e0;
+    margin-bottom: 10px;
+}
+
+
+.right label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.right input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.right button {
+    background: #f4c542;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background: #e0b733;
+}
+
+
+@media (max-width: 900px) {
+    .newsletter {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px;
+    background: #efefef;
+}
+
+.info {
+    width: 45%;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.link {
+    color: #d9a400;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    background: linear-gradient(90deg, #1f1f1f, #2c2c2c);
+    color: white;
+    padding: 50px 120px;
+    border-radius: 12px 12px 12px 12px;
+    height: 300px;
+    margin: 12px auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-left {
+    max-width: 300px;
+}
+
+.logo4 {
+    background: #f4c542;
+    color: black;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-left h3 {
+    margin-bottom: 10px;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
